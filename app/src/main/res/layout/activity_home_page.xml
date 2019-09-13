@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Layout correspondant à la page d'acceuil quand on ouvre l'application -->
+<!-- Seulement les 3 boutons sont en xml, le reste n'est qu'une image de fond, voir ../drawable/home.png -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context="com.graphogame.myapplication.HomePage">
+
+
+
+    <!-- Contraintes relatives aux boutons, en poucentage de l'écran de manière à ce que le rendu soit adapté à tout appareil -->
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_guideline1"
+        app:layout_constraintGuide_percent=".66"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_guideline1"
+        app:layout_constraintGuide_percent=".34"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_guideline1"
+        app:layout_constraintGuide_percent=".43"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_guideline1"
+        app:layout_constraintGuide_percent=".53"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_guideline2"
+        app:layout_constraintGuide_percent=".60"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_guideline2"
+        app:layout_constraintGuide_percent=".70"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_guideline2"
+        app:layout_constraintGuide_percent=".71"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_guideline2"
+        app:layout_constraintGuide_percent=".57"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_guideline3"
+        app:layout_constraintGuide_percent=".80"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_guideline3"
+        app:layout_constraintGuide_percent=".86"
+        android:orientation="horizontal"/>
+
+
+    <!-- Les 3 boutons en question -->
+
+    <Button
+        android:id="@+id/patient_btn"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/buttonshape"
+
+        android:fontFamily="@font/architects_daughter"
+        android:onClick="patientMode"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/patient"
+        android:textColor="#eaeaea"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline1"
+        app:layout_constraintLeft_toLeftOf="@+id/left_guideline1"
+        app:layout_constraintRight_toRightOf="@+id/right_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline1" />
+
+
+    <Button
+        android:id="@+id/therapist_btn"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/buttonshape"
+
+        android:fontFamily="@font/architects_daughter"
+        android:onClick="therapistMode"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/therapeute"
+        android:textColor="#eaeaea"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline2"
+        app:layout_constraintLeft_toLeftOf="@+id/left_guideline1"
+        app:layout_constraintRight_toRightOf="@+id/right_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline2" />
+
+
+    <Button
+        android:id="@+id/left_btn"
+
+        android:fontFamily="@font/architects_daughter"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:text="@string/quitter"
+        android:textColor="#eaeaea"
+        android:textSize="12sp"
+
+
+        android:background="@drawable/buttonshapeleft"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:onClick="left"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline3"
+        app:layout_constraintLeft_toLeftOf="@+id/left_guideline2"
+        app:layout_constraintRight_toRightOf="@+id/right_guideline2"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline3"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

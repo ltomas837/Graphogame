@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout pour la liste des appareils dans l'interface patient, voir onResume() de la classe DeviceListActivity -->
+<!-- Code le rendu visuel de l'affichage d'un appareil -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:padding="5dp">
+
+</TextView>

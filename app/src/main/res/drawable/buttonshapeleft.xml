@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Style du bouton permettant de quitter l'application dans la page d'acceuil -->
+<!-- Pour faire des boutons personalisés, se reporter au rapport où un lien est indiqué -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <corners
+        android:radius="20dp"
+        />
+    <solid
+        android:color="#000000"
+        />
+    <padding
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp"
+        />
+    <stroke
+        android:width="3dp"
+        android:color="#eaeaea"
+        />
+</shape>

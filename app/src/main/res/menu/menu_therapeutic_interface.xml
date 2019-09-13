@@ -1,0 +1,23 @@
+
+<!-- Correspond au menu accessible depuis l'interface thérapeute proposant de changer de mot de passe, d'adresse mail ou de télécharger les données en mémoire -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.graphogame.TherapeuticInterface">
+    <item
+        android:id="@+id/exportData"
+        android:orderInCategory="100"
+        android:title="@string/action_exportData"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/changePwd"
+        android:orderInCategory="100"
+        android:title="@string/action_changePwd"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/changeMail"
+        android:orderInCategory="100"
+        android:title="@string/action_changeMail"
+        app:showAsAction="never" />
+</menu>
+

@@ -1,0 +1,7 @@
+
+<!-- Fichier.xml nécessaire pour exporter le fichier.csv comportant les données de capteur, voir le fichier AndroidManifest.xml -->
+<paths>
+    <files-path
+        name="data"
+        path="."/>
+</paths>

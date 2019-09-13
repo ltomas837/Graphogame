@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.graphogame.myapplication">
+
+    <!-- Afin d'utiliser OpenGL avec la SFML -->
+    <!-- Néanmoins peut-être mettre une plus récente car une erreur relative à ce tag s'affiche dans le log au démarrage de l'application -->
+    <uses-feature android:glEsVersion="0x00010001" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />               <!-- Socket bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />         <!-- Socket bluetooth -->
+    <!--uses-permission android:name="com.android.alarm.permission.SET_ALARM"/--> <!-- Notifications -->
+    <!--uses-permission android:name="android.permission.WAKE_LOCK"/-->           <!-- Notifications -->
+    <!--uses-permission android:name="android.permission.VIBRATE"/-->             <!-- Utile pour faire vibrer l'appreil, voir la fonction dans l'exemple SFML -->
+    <uses-permission android:name="android.permission.INTERNET" />                <!-- Socket TCP -->
+
+
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_handshake"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_handshake"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:hasCode="true">
+
+        <activity
+            android:name="com.graphogame.myapplication.TherapeuticInterface"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name="com.graphogame.myapplication.FreeMode"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name="com.graphogame.myapplication.LaunchGameActivity"
+            android:screenOrientation="landscape">
+            <meta-data android:name="android.app.lib_name" android:value="sfml-activity-d" />
+            <meta-data android:name="sfml.app.lib_name" android:value="Game1" />
+        </activity>
+
+
+        <activity android:name="com.graphogame.myapplication.LaunchGameActivity2"
+            android:screenOrientation="landscape">
+            <meta-data android:name="android.app.lib_name" android:value="sfml-activity-d" />
+            <meta-data android:name="sfml.app.lib_name" android:value="Game2" />
+        </activity>
+
+
+        <activity
+            android:name="com.graphogame.myapplication.DeviceListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.graphogame.myapplication.HomePage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.graphogame.myapplication.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- Pour les notifications -->
+        <!--receiver
+            android:name="com.graphogame.myapplication.NotificationReceiver"
+            android:enabled="true" /-->
+
+    </application>
+
+</manifest>

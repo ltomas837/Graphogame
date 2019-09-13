@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Graphogame</string>
+    <string name="therapist_mode">Thérapeute</string>
+    <string name="patient_mode">Patient</string>
+    <string name="select_device">Sélectionnez l\'appareil bluetooth:</string>
+    <string name="reminder_bt">Si l\'appareil de rééducation n\'apparaît pas, veuillez l\'appairer à partir des paramètres Bluetooth</string>
+    <string name="none_paired">Aucun appareil n\'a été connecté</string>
+    <string name="connecting">Connexion…</string>
+    <string name="passw">Mot de passe</string>
+    <string name="enterPwd">Entrez le mot de passe actuel</string>
+    <string name="enterNewPwd">Entrez un nouveau mot de passe</string>
+    <string name="confirmNewPwd">Confirmez le nouveau mot de passe</string>
+    <string name="listActivity">Liste des activités programmées:</string>
+    <string name="none_programmed">Aucune activité n\'a été programmée</string>
+    <string name="action_changePwd">Changer le mot de passe</string>
+    <string name="programActivity">Programmer une activité</string>
+    <string name="pseudo">Entrer le pseudonyme du patient</string>
+    <string name="newPatient">Créer nouveau patient</string>
+    <string name="underlined_dynamic_text"><u>%s</u></string>
+    <string name="currentMail">Mail de notification actuel</string>
+    <string name="action_changeMail">Changer l\'Email de notification</string>
+    <string name="informationMessage">Message d\'information</string>
+    <string name="enterNewMail">Entrer votre Email</string>
+    <string name="scheduleValidation">Valider l\'horaire</string>
+    <string name="action_exportData">Exporter les données en mémoire</string>
+    <string name="deleteData">Effacer les données de l\'application</string>
+    <string name="dontShowAnymore">Ne plus afficher</string>
+    <string name="inDev">Le mode libre n\'est pas encore disponible !</string>
+    <string name="patient">Patient</string>
+    <string name="therapeute">Thérapeute</string>
+    <string name="quitter">Quitter</string>
+
+    <string-array name="activityOption">
+        <item>Répéter l\'exercice tous les jours</item>
+        <item>Effectuer l\'exercice maintenant</item>
+    </string-array>
+
+    <string-array name="difficulties">
+        <item>Choisir la difficulté…</item>
+        <item>Facile</item>
+        <item>Moyen</item>
+        <item>Difficile</item>
+    </string-array>
+
+    <string-array name="durations">
+        <item>Choisir la durée…</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Checkbox correspondant à la fenêtre d'information affichée lorsque le thérapeute change d'email de notification dans l'interface thérapeute -->
+<!-- Possibilité de ne plus l'afficher si la checkbox est cochée -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+    <CheckBox
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dontShowAnymore" >
+    </CheckBox>
+
+</LinearLayout>
